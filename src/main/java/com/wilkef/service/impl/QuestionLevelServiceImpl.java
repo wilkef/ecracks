@@ -16,9 +16,13 @@ public class QuestionLevelServiceImpl implements IQuestionLevelService{
 	private IQuestionLevelDao questionDao;
 
 	@Override
-	public List<QuestionLevel> findByDifficultyCode(String DifficultyCode) {
-		List<QuestionLevel> findByDifficultyCode = questionDao.findByDifficultyCode(DifficultyCode);
+	public List<QuestionLevel> findQuestionLevel() {
+		
+		List<QuestionLevel> findByDifficultyCode = questionDao.findQuestionLevel();
+		
 		return findByDifficultyCode;
 	}
+
+	
 
 }

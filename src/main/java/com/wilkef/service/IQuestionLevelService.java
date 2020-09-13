@@ -6,6 +6,6 @@ import com.wilkef.model.QuestionLevel;
 
 public interface IQuestionLevelService {
 	
-	public List<QuestionLevel> findByDifficultyCode(String DifficultyCode);
+	public List<QuestionLevel> findQuestionLevel();
 
 }

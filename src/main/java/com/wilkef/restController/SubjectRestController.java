@@ -40,7 +40,7 @@ public class SubjectRestController {
 				response=new ResponseEntity<List<Subject>>(findBySubject,HttpStatus.OK);
 			}else {
 				log.info("No Student exist: size "+findBySubject.size());
-				response=new ResponseEntity<String>("No Subject Record Found !!",HttpStatus.OK);
+				response=new ResponseEntity<String>("No Subject Found !!",HttpStatus.OK);
 			}
 		} catch (Exception e) {
 			log.error("Unable to fetch Subject : problem is :"+e.getMessage());

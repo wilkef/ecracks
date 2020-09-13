@@ -6,5 +6,5 @@ import com.wilkef.model.QuestionLevel;
 
 public interface IQuestionLevelDao {
 	
-	public List<QuestionLevel> findByDifficultyCode(String DifficultyCode);
+	public List<QuestionLevel> findQuestionLevel();
 }

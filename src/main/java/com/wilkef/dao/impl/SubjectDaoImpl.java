@@ -25,6 +25,7 @@ public class SubjectDaoImpl implements ISubjectDao{
 		String sql="SELECT * FROM Subject where GradeId='"+GradeId+"'";
 		
 		List<Subject> queryForList = jt.query(sql, new BeanPropertyRowMapper<Subject>(Subject.class));
+		
 		subjectList.addAll(queryForList);
 		
 		return subjectList;
